@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr-en-US">
+
+<head>
+
+<title>DigiFlixx</title>
+<meta name="viewport" content="width=device-width, initial-scale">
+<meta charset="UTF-8">
+<meta name="description" content="Film İzleme Sitesi">
+<meta name="keywords" content="Full izle, Full Hd izle, Film izle, Yabancı Film izle,4k film İzle, Netİzle">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="film_backg.css"> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styletoggle.css">
+<link  href="favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+ <div class="navbar">
+      <a href="Deneme_v2.html"><li class="logo"><img src="digiflixx.png"></li></a>
+      <form action="">
+        <input type="search" required>
+        <i class="fa fa-search"></i>
+        <div class="asearch">
+          <a href="javascript:void(0)" id="clear-btn">Clear</a>
+        </div>
+      </form>
+          
+           <div class="toggle">
+            <div class="load-flash" style="display: none; visibility: hidden;"></div>
+            <div class="dark">
+            
+            <div class="load-flash"></div>
+            
+            <div class="mode-toggle noselect">
+              <h6 class="label-dark">Dark</h6>
+              <div class="toggle-switch"></div>
+              <h6 class="label-light">Light</h6>
+            </div>
+            
+            <script src="jquery.js"></script>
+            <script src="script.js"></script> 
+          </div> 
+          </div>
+          <div class="button-div">
+            <button class="signup-button">Signup</button>
+            <button class="login-button">Login</button>
+        </div>
+    </div>
+<hr>
+<script>
+  const clearInput = () => {
+   const input = document.getElementsByTagName("input")[0];
+   input.value = "";
+ }
+ 
+ const clearBtn = document.getElementById("clear-btn");
+ clearBtn.addEventListener("click", clearInput);
+
+ </script>
+    
+    
+
+    <div class="movie_card" id="fast-9" style="margin-left: 30px; width: 1450px; height:700px;" >
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://m.media-amazon.com/images/M/MV5BMjI0NmFkYzEtNzU2YS00NTg5LWIwYmMtNmQ1MTU0OGJjOTMxXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_FMjpg_UX1000_.jpg"/>
+          <h1>Fast and Furious 9</h1>
+          <h4>2021, Justin Lin</h4>
+          <span class="minutes">142 min</span>
+          <p class="type">Aksiyon ve Macera</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Son zamanların popüler Hollywood serisi olan Hızlı ve Öfkeli, serinin 9. filmi ile tekrar izleyicileriyle buluşuyor. Vin Diesel'in canlandırdığı Dominic Toretto, Tyrese Gibson’ın canlandırdığı Roman Pearce ve Michelle Rodriguez’in canlandırdığı Letty gibi serinin önceki filmlerinden bildiğimiz karakterler ve filmin oyuncu kadrosuna, hemen hemen her Hızlı ve Öfkeli filminde gördüğümüz gibi, 9. filmde de bazı sürpriz isimler eklenmiş. Bu isimlerden belki de en popüler olanı, Amerikan güreşi izleyicilerinin de yakından tanıyacağı John Cena.
+
+Bununla birlikte onu, en son serinin 7. filminde gördüğümüz, geçtiğimiz senelerde hayatını kaybeden ünlü oyuncu Paul Walker’ın canlandırdığı Brian O'Conner'ın eşi olan, aynı zamanda Dominic'in de kız kardeşi, Jordana Brewster'ın canlandırdığı Mia da yeniden boy gösteren karakterler arasında bulunuyor.
+
+Serinin sürpriz ismi John Cena bu filmde, usta bir hırsız, suikastçı ve aynı zamanda çok iyi bir şoför olan, Jacob Toretto’yu canlandırıyor. Dominic ile aynı soyadını taşımaları bir tesadüf değil, zira Jacob, Dominic’in seneler sonra ortaya çıkan kardeşi. Fakat bu iki kardeş tahmin edebileceğimiz üzere biliğimiz manada kardeş değil. Aksine Jacob, Dom ve ekibini bekleyen en büyük tehlike!
+            </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>        
+          </ul>
+        </div>
+        
+      </div>
+      <div class="blur_back fast-9_back"></div>
+    </div>
+  
+  
+      
+
+
+
+
+    <h1>FAST and FURIOUS 9</h1>
+      <div class="hrcizgi"></div>
+
+
+
+
+
+
+  
+
+
+
+
+    <div class="player" >
+    
+
+     <iframe src="https://travel-russia.xyz/video/f4f6dce2f3a0f9dada0c2b5b66452017" frameborder="0" width="1500px" height="700px" style="margin-top: 50px; margin-left: 8px ;" allowfullscreen ></iframe> 
+
+
+  </div>
+
+
+  <button class="like__btn">
+    <span id="icon"><i class="far fa-thumbs-up"></i></span>
+    <span id="count">0</span>  Beğen
+ </button>
+
+
+<script>
+  
+  const likeBtn = document.querySelector(".like__btn");
+let likeIcon = document.querySelector("#icon"),
+  count = document.querySelector("#count");
+
+let clicked = false;
+
+
+likeBtn.addEventListener("click", () => {
+  if (!clicked) {
+    clicked = true;
+    likeIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`;
+    count.textContent++;
+  } else {
+    clicked = false;
+    likeIcon.innerHTML = `<i class="far fa-thumbs-up"></i>`;
+    count.textContent--;
+  }
+});
+
+
+
+  </script>
+
+
+<div class="rate">
+  <input type="radio" id="star5" name="rate" value="5" />
+  <label for="star5" title="text">5 stars</label>
+  <input type="radio" id="star4" name="rate" value="4" />
+  <label for="star4" title="text">4 stars</label>
+  <input type="radio" id="star3" name="rate" value="3" />
+  <label for="star3" title="text">3 stars</label>
+  <input type="radio" id="star2" name="rate" value="2" />
+  <label for="star2" title="text">2 stars</label>
+  <input type="radio" id="star1" name="rate" value="1" />
+  <label for="star1" title="text">1 star</label>
+</div>
+
+
+<div  class="comment-box">
+  <h2>Yorumlar</h2>
+  <form action="#">
+    <input type="text" name="full_name" placeholder="Full Name........">
+    <input type="email" name="email" placeholder="Email Address........">
+    <textarea name="comment" placeholder="Type Your Comment........"></textarea>
+    <button type="sumbit">Yorum Gönder</button>
+  </form>
+</div>
+
+
+
+<footer style="margin-top: 700px;">
+  <img src="digiflixx.png">
+  <div id="line"></div>
+  <h3>© DIGIFLIXX by  OM 2023</h3>
+  <div class="social_footer">
+    <ul>
+      <li><a href="#" target="_blank">
+          <i class="fab fa-facebook" tabindex="0"></i>
+        </a></li>
+      <li><a href="#" target="_blank">
+          <i class="fab fa-instagram" tabindex="0"></i>
+        </a></li>
+      <li><a href="#" target="_blank">
+          <i class="fab fa-github" tabindex="0"></i>
+        </a></li>
+    </ul>
+  </div>
+  <h3 id="links"><a href="#">Imprint</a><span><a href="#">Privacy</a></span></h3>
+</footer>
+
