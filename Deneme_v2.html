@@ -8,27 +8,59 @@
 <meta charset="UTF-8">
 <meta name="description" content="Film İzleme Sitesi">
 <meta name="keywords" content="Full izle, Full Hd izle, Film izle, Yabancı Film izle,4k film İzle, Netİzle">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" type="text/css" href="Deneme_v2.css"> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styletoggle.css">
+<link  href="favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>
 
 
-    <a class="link" href="Deneme.html">Light Version</a>
-<hr>   
  <div class="navbar">
-      <li class="logo"><img src="digiflixx.png"></li>
-          <form>
-              <div id="box">
-                  <input type="text" id="search" placeholder="Ara..">
-                  <i class="fa fa-search"></i>
-              </div>
-           </form> 
-           <button style="margin-left: 6cm; "><a href="#" style =" color: bisque;"></style>Giriş Yap</a></button>
+      <a href="Deneme_v2.html"><li class="logo"><img src="digiflixx.png"></li></a>
+      <form action="">
+        <input type="search" required>
+        <i class="fa fa-search"></i>
+        <div class="asearch">
+          <a href="javascript:void(0)" id="clear-btn">Clear</a>
+        </div>
+      </form>
+          
+           <div class="toggle">
+            <div class="load-flash" style="display: none; visibility: hidden;"></div>
+            <div class="dark">
+            
+            <div class="load-flash"></div>
+            
+            <div class="mode-toggle noselect">
+              <h6 class="label-dark">Dark</h6>
+              <div class="toggle-switch"></div>
+              <h6 class="label-light">Light</h6>
+            </div>
+            
+            <script src="jquery.js"></script>
+            <script src="script.js"></script> 
+          </div> 
+          </div>
+          <div class="button-div">
+            <button class="signup-button">Signup</button>
+            <button class="login-button">Login</button>
+        </div>
     </div>
 <hr>
+<script>
+  const clearInput = () => {
+   const input = document.getElementsByTagName("input")[0];
+   input.value = "";
+ }
+ 
+ const clearBtn = document.getElementById("clear-btn");
+ clearBtn.addEventListener("click", clearInput);
 
+ </script>
     
     <div class="movie_card" id="bright">
       <div class="info_section">
@@ -50,12 +82,16 @@
             <li><i class="material-icons">share</i></li>
             <li><i class="material-icons"></i></li>
             <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="brght.html"><i class="material-icons" >movie</i></a></li>
           </ul>
         </div>
       </div>
       <div class="blur_back bright_back"></div>
     </div>
     
+
+
+
     <div class="movie_card" id="tomb">
       <div class="info_section">
         <div class="movie_header">
@@ -75,12 +111,17 @@
             <li><i class="material-icons">share</i></li>
             <li><i class="material-icons"></i></li>
             <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="tombrdr.html"><i class="material-icons">movie</i></a></li>
           </ul>
         </div>
       </div>
       <div class="blur_back tomb_back"></div>
     </div>
     
+
+
+
+
     <div class="movie_card" id="ave">
       <div class="info_section">
         <div class="movie_header">
@@ -99,12 +140,17 @@
             <li><i class="material-icons">share</i></li>
             <li><i class="material-icons"></i></li>
             <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="blckpnthr.html"><i class="material-icons">movie</i></a></li>
           </ul>
         </div>
       </div>
       <div class="blur_back ave_back"></div>
     </div>
   
+
+
+
+
     <div class="movie_card" id="mother">
       <div class="info_section">
         <div class="movie_header">
@@ -123,12 +169,14 @@
             <li><i class="material-icons">share</i></li>
             <li><i class="material-icons"></i></li>
             <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="thmthr.html"><i class="material-icons">movie</i></a></li>
           </ul>
         </div>
       </div>
       <div class="blur_back mother_back"></div>
     </div>
   
+
 
     <div class="movie_card" id="fast-9">
       <div class="info_section">
@@ -149,13 +197,18 @@
             <li><i class="material-icons">share</i></li>
             <li><i class="material-icons"></i></li>
             <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="ff.html"><i class="material-icons">movie</i></a></li>
+            
+            
+            </li>
           </ul>
         </div>
+        
       </div>
       <div class="blur_back fast-9_back"></div>
     </div>
   
-   
+    
     
 
 
@@ -180,6 +233,7 @@
             <li><i class="material-icons">share</i></li>
             <li><i class="material-icons"></i></li>
             <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="rntc.html"><i class="material-icons">movie</i></a></li>
           </ul>
         </div>
       </div>
@@ -187,16 +241,53 @@
     </div>
   
 
+    
+
+
+
+
+
+
+
+
+
 
     <footer>
       <img src="digiflixx.png">
       <div id="line"></div>
       <h3>© DIGIFLIXX by  OM 2023</h3>
+      <div class="social_footer">
+        <ul>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-facebook" tabindex="0"></i>
+            </a></li>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-instagram" tabindex="0"></i>
+            </a></li>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-github" tabindex="0"></i>
+            </a></li>
+        </ul>
+      </div>
       <h3 id="links"><a href="#">Imprint</a><span><a href="#">Privacy</a></span></h3>
     </footer>
     
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   </body>
 </html>
