@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="tr-en-US">
+
+<head>
+
+<title>DigiFlixx</title>
+<meta name="viewport" content="width=device-width, initial-scale">
+<meta charset="UTF-8">
+<meta name="description" content="Film İzleme Sitesi">
+<meta name="keywords" content="Full izle, Full Hd izle, Film izle, Yabancı Film izle,4k film İzle, Netİzle">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="Home.css"> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styletoggle.css">
+<link  href="favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+ <div class="navbar">
+      <a href="Home.html"><li class="logo"><img src="digiflixx.png"></li></a>
+      <form action="">
+        <input type="search" required>
+        <i class="fa fa-search"></i>
+        <div class="asearch">
+          <a href="javascript:void(0)" id="clear-btn">Clear</a>
+        </div>
+      </form>
+          
+           <div class="toggle">
+            <div class="load-flash" style="display: none; visibility: hidden;"></div>
+            <div class="dark">
+            
+            <div class="load-flash"></div>
+            
+            <div class="mode-toggle noselect">
+              <h6 class="label-dark">Dark</h6>
+              <div class="toggle-switch"></div>
+              <h6 class="label-light">Light</h6>
+            </div>
+            
+            <script src="jquery.js"></script>
+            <script src="script.js"></script> 
+          </div> 
+          </div>
+          <div class="button-div">
+            <button class="signup-button">Signup</button>
+            <button class="login-button">Login</button>
+        </div>
+    </div>
+<hr>
+
+
+
+<!--Button un scripti-->
+<script>
+  const clearInput = () => {
+   const input = document.getElementsByTagName("input")[0];
+   input.value = "";
+ }
+ 
+ const clearBtn = document.getElementById("clear-btn");
+ clearBtn.addEventListener("click", clearInput);
+
+ </script>
+
+
+
+   <div id="movie"> 
+
+    <div class="movie_card" id="bright">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://movieplayer.net-cdn.it/t/images/2017/12/20/bright_jpg_191x283_crop_q85.jpg"/>
+          <h1>Bright</h1>
+          <h4>2017, David Ayer</h4>
+          <span class="minutes">117 min</span>
+          <p class="type">Action, Crime, Fantasy</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Set in a world where fantasy creatures live side by side with humans. A human cop is forced to work with an Orc to find a weapon everyone is prepared to kill for. 
+          </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="brght.html"><i class="material-icons" >movie</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back bright_back"></div>
+    </div>
+    
+
+
+
+    <div class="movie_card" id="tomb">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53750.jpg"/>
+          <h1>Tomb Raider</h1>
+          <h4>2018, Roar Uthaug</h4>
+          <span class="minutes">125 min</span>
+          <p class="type">Action, Fantasy</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she finds herself on the island where her father disappeared.
+          </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="tombrdr.html"><i class="material-icons">movie</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back tomb_back"></div>
+    </div>
+    
+
+
+
+
+    <div class="movie_card" id="ave">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53715.jpg"/>
+          <h1>Black Panther</h1>
+          <h4>2018, Ryan Coogler</h4>
+          <span class="minutes">134 min</span>
+          <p class="type">Action, Adventure, Sci-Fi</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Genç kral T’Challa vatanı Wakanda'yı ve tüm dünyayı tehlikeye atan eski bir düşmanla ihtilafa düşünce, onları kurtarmak için Black Panther’in bütün gücünü serbest bırakmak zorunda kalır.          </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="blckpnthr.html"><i class="material-icons">movie</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back ave_back"></div>
+    </div>
+  
+
+
+
+
+    <div class="movie_card" id="mother">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR87MgjSUTPyW43l-JmBleLsvRox7HY2dLxQbYA2kuo2Wr_B__t"/>
+          <h1>The Mother</h1>
+          <h4>2023, Niki Caro</h4>
+          <span class="minutes">117 min</span>
+          <p class="type">Dramalar,Aksiyon ve Macera</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Bir suikastçı, hiç tanımadığı kızını intikam peşindeki acımasız suçlulardan korumak için, saklandığı yerden çıkar. Bu tehlikeli görevde, geçmişinin şeytanlarıyla ve unutmaya çalıştığı acı dolu anılarıyla yüzleşmek zorundadır.  </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="thmthr.html"><i class="material-icons">movie</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back mother_back"></div>
+    </div>
+  
+
+
+    <div class="movie_card" id="fast-9">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://m.media-amazon.com/images/M/MV5BMjI0NmFkYzEtNzU2YS00NTg5LWIwYmMtNmQ1MTU0OGJjOTMxXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_FMjpg_UX1000_.jpg"/>
+          <h1>Fast and Furious 9</h1>
+          <h4>2021, Justin Lin</h4>
+          <span class="minutes">142 min</span>
+          <p class="type">Aksiyon ve Macera</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Dominic Toretto ve ekibi uygarlığı tehdit eden bir operasyona karşı koymak için yarışır. Bu operasyonu yöneten kişi ise Dom'un kardeşi olduğu ortaya çıkan üst düzey bir suçludur. 
+            </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="ff.html"><i class="material-icons">movie</i></a></li>
+            
+            
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="blur_back fast-9_back"></div>
+    </div>
+  
+    
+    
+
+
+
+
+
+    <div class="movie_card" id="rnotice">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://tr.web.img4.acsta.net/c_310_420/pictures/21/10/21/15/22/3091516.jpg"/>
+          <h1>Red Notice</h1>
+          <h4>2021, Rawson Marshall Thurber</h4>
+          <span class="minutes">118 min</span>
+          <p class="type">Komedi,Aksiyon ve Macera</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Dünyanın en çok aranan sanat eseri hırsızı ve onun peşindeki FBI profil uzmanı, daima bir adım önde olan kurnaz bir soyguncuyu yakalamak için gönülsüzce suç ortağı olur.</p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="rntc.html"><i class="material-icons">movie</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back rnotice_back"></div>
+    </div>
+  
+
+
+   
+
+      
+    <div class="movie_card" id="matrix">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"/>
+          <h1>The Matrix</h1>
+          <h4>1999, Lilly Wachowski - Lana Wachowski </h4>
+          <span class="minutes">136 min</span>
+          <p class="type">Bilim Kurgu/Aksiyon </p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            İnsanları, bedenleri yakıt için hasat edilen köleler oldukları gerçeğinden mutlu bir şekilde habersiz tutan gerçek hayatın bir simülasyonu olan “Matrix”i yarattı. 
+            </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="matrix.html"><i class="material-icons">movie</i></a></li>
+            
+            
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="blur_back matrix_back"></div>
+    </div>
+  
+    
+    
+
+
+
+
+
+    <div class="movie_card" id="incept">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg"/>
+          <h1>Inception</h1>
+          <h4>2010, Christopher Nolan</h4>
+          <span class="minutes">148 min</span>
+          <p class="type"> Aksiyon/Bilim Kurgu</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Dom Cobb çok yetenekli bir hırsızdır. Uzmanlık alanı, zihnin en savunmasız olduğu rüya görme anında, bilinçının derinliklerindeki değerli sırları çekip çıkarmak ve onları çalmaktır.</p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="inception.html"><i class="material-icons">movie</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back incept_back"></div>
+    </div>
+
+
+
+
+
+
+    <div class="movie_card" id="lord_ring">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://tr.web.img4.acsta.net/pictures/bzp/01/39187.jpg"/>
+          <h1>The Lord of the Rings: The Return of the King</h1>
+          <h4>2003 Justin Lin</h4>
+          <span class="minutes">201 min</span>
+          <p class="type">Fantastik/Macera</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Tek Yüzük'ün yok edilmesi için verilen mücadeleyi konu ediyor. Sauron'un orduları büyüdükçe büyümektedirler. 
+            </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="lord.html"><i class="material-icons">movie</i></a></li>
+                        
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+
+      <div class="blur_back lord_ring_back"></div>
+    </div>
+
+
+
+
+
+
+    <div class="movie_card" id="dark_knight">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://upload.wikimedia.org/wikipedia/tr/4/4d/Kara_%C5%9E%C3%B6valye_TR_film_afi%C5%9Fi.jpg"/>
+          <h1>The Dark Knight</h1>
+          <h4>2008, Christopher Nolan</h4>
+          <span class="minutes">152 min</span>
+          <p class="type">Dramalar,Aksiyon ve Macera</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Kara Şövalye, halk için büyük bir tehdit oluşturan Joker'in ortaya çıkması ile kaosa dönen Gotham Sokakları'nın yeniden kurtarıcılığını üstlenen Batman'in hikayesini konu ediyor.   </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="darkN.html"><i class="material-icons">movie</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back dark_knight_back"></div>
+    </div>
+
+
+    <div class="movie_card" id="shawshank">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://upload.wikimedia.org/wikipedia/tr/e/e6/Esaretin-bedeli.jpg"/>
+          <h1>The Shawshank Redemption</h1>
+          <h4>1994, Frank Darabont</h4>
+          <span class="minutes">144 min</span>
+          <p class="type">Dram/Polisiye</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Esaretin Bedeli, Andy ve Red isimli iki mahkumun parmaklıklar ardında kurdukları dünyanın hikayesini anlatıyor.</p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="shaws.html"><i class="material-icons">movie</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back shawshank_back"></div>
+    </div>
+
+
+
+    <div class="movie_card" id="godfather">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"/>
+          <h1>The Godfather</h1>
+          <h4>1972, Francis Ford Coppola</h4>
+          <span class="minutes">175 min</span>
+          <p class="type">Suç/Dram</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text">
+            Baba, 40’lar ve 50’lerin Amerika’sında, bir İtalyan mafya ailesinin destansı öyküsünü konu alıyor. </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+            <li><a href="godfather.html"><i class="material-icons">movie</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back godfather_back"></div>
+    </div>
+
+  </div>
+
+   
+
+ 
+<!---Footer kısmı -->
+    <footer>
+      <img src="digiflixx.png">
+      <div id="line"></div>
+      <h3>© DIGIFLIXX by  OM 2023</h3>
+      <div class="social_footer">
+        <ul>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-facebook" tabindex="0"></i>
+            </a></li>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-instagram" tabindex="0"></i>
+            </a></li>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-github" tabindex="0"></i>
+            </a></li>
+        </ul>
+      </div>
+      <h3 id="links"><a href="#">Imprint</a><span><a href="#">Privacy</a></span></h3>
+    </footer>
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  </body>
+</html>

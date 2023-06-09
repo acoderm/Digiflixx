@@ -22,7 +22,7 @@
 }
 .toggle{
 	max-width: 5px;
-	padding-left: 260px;
+	padding-left: 140px;
 }
 .dark {
 	color:var(--gray-60);

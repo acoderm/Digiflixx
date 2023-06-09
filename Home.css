@@ -30,12 +30,13 @@ body {
   justify-content:space-between;
   background-color: transparent;
   align-self: center;
+  
 }
 
 .hdr-alt{
 
   padding-block-end: 50px;
-  width: 1200px;
+  width: 1100px;
  height: 15px;
   margin: 0 auto;
   display:flex;
@@ -59,7 +60,7 @@ button:hover {
 }
 
 
-.navbar form{
+form{
   position: relative;
   top: 28px;
   left: 410px;
@@ -104,19 +105,19 @@ input{
   transition: all 1s;
 }
 
-.navbar form:hover,
-.navbar form:valid{
+form:hover,
+form:valid{
   width: 200px;
   cursor: pointer;
 }
 
-.navbar form:hover input,
-.navbar form:valid input{
+form:hover input,
+form:valid input{
   display: block;
 }
 
-.navbar form:hover .fa,
-.navbar form:valid .fa{
+form:hover .fa,
+form:valid .fa{
   background: #07051a;
   color: white;
 }
@@ -135,7 +136,7 @@ text-align: center;
 width: 100%;
 }
 
-.navbar form:valid a {
+form:valid a {
 display: block;
 }
 
@@ -179,7 +180,6 @@ display: block;
   padding:7px;
   padding-right: 20px;
 }
-
 
 .signup-button{
   width:100%;
@@ -227,17 +227,24 @@ hr {
   border-radius: 5px;
 }
 
+#movie{
+ max-width: auto;
+}
+
 .movie_card {
   position: relative;
   display: block;
   float: left;
-  width: 100%;
-  height: 100%;
-  margin: 80px auto;
+  width: 45%;
+  height: 40%;
+  margin: 50px auto;
   overflow: hidden;
   border-radius: 10px;
   transition: all 0.4s;
-    max-height: 3000px;
+    margin-right: 15px;
+    max-height: 330px;
+    margin-left: 45px;
+    padding-bottom: 100px;
 }
 .movie_card:hover {
   transform: scale(1.02);
@@ -285,14 +292,11 @@ hr {
   box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
 }
 .movie_card .info_section .movie_desc {
-  padding: 25px;
-  height: 50%;
+  padding: 30px;
+  height: 30%;
 }
 .movie_card .info_section .movie_desc .text {
   color: #cfd6e1;
-  text-align: left;
-  font-size: 15px;
-  margin-top: -40px;
 }
 .movie_card .info_section .movie_social {
   height: 10%;
@@ -346,11 +350,12 @@ hr {
     background-position: -140% 10% !important;
   }
 }
-@media screen and (width: 1500px){
+@media screen and (max-width: 768px) {
   .movie_card {
-    width: 100%;
+    width: 55%;
     margin: 70px auto;
-    height: 100%;
+    min-height: 350px;
+    height: 35%;
   }
 
   .blur_back {
@@ -379,10 +384,12 @@ hr {
 
 #bright {
     box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
+    margin-bottom: 150px;
   }
   #bright:hover {
     box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.5);
   }
+
 
 .tomb_back {
   background: url("https://fsmedia.imgix.net/cd/c9/5e/ba/4817/4d9a/93f0/c776ec32ecbc/lara-crofts-neck-looks-unnatural-in-the-new-poster-for-tomb-raider.png");
@@ -390,10 +397,16 @@ hr {
 
 #tomb {
     box-shadow: 0px 0px 150px -45px rgba(19, 160, 134, 0.6);
+    margin-bottom: 150px;
   }
+  
   #tomb:hover {
     box-shadow: 0px 0px 120px -55px rgba(19, 160, 134, 0.6);
+    
   }
+
+
+
 
 .ave_back {
   background: url("https://www.gannett-cdn.com/-mm-/c03fd140debe8ad4c05cf81a5cad7ad61a12ce52/c=0-1580-2985-3266&r=x803&c=1600x800/local/-/media/2017/06/09/USATODAY/USATODAY/636326272873599176-Black-Panther-Teaser.jpg");
@@ -401,11 +414,13 @@ hr {
 
 #ave {
   box-shadow: 0px 0px 150px -45px rgba(199, 147, 75, 0.7);
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 #ave:hover {
   box-shadow: 0px 0px 120px -55px rgba(199, 147, 75, 0.7);
 }
+
+
 
 
 .mother_back {
@@ -414,7 +429,7 @@ hr {
 
 #mother{
   box-shadow: 0px 0px 150px -45px rgba(148, 255, 235, 0.7);
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 #mother:hover {
   box-shadow: 0px 0px 120px -55px rgba(148, 255, 235, 0.7);
@@ -430,7 +445,7 @@ hr {
 
 #fast-9{
   box-shadow: 0px 0px 150px -45px rgba(255, 237, 38, 0.929);
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 #fast-9:hover {
@@ -446,12 +461,13 @@ hr {
 
 #rnotice{
   box-shadow: 0px 0px 150px -45px rgba(243, 36, 53, 0.929);
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 #rnotice:hover {
   box-shadow: 0px 0px 120px -55px rgba(243, 36, 53, 0.929);
 }
+
 
 
 .matrix_back {
@@ -555,7 +571,7 @@ footer {
    width: 900px;
    border-radius: 20px;
    background-color: rgb(0, 0, 0);
-    margin-top: 3000px;
+    margin-top: 3500px;
     margin-left: 350px;
     padding: 30px;
     box-shadow: 0px 0px 120px -55px #e50914;
@@ -666,7 +682,7 @@ ul li {
 
 .fa-github:hover,
 .fa-github:focus {
-  color: #000;
+  color:#bd22a2;
   transform: scale(1.1);
 }
 
@@ -752,148 +768,4 @@ ul li {
   max-height: 30%;
   overflow: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.hrcizgi{
-    border:1px solid rgba(255, 0, 0, 0.5);
-  }
-
-  
-
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
-
-
-.like__btn {
-  padding: 10px 15px;
-  background: #0080ff;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  border-radius: 5px;
-  color: #e8efff;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  margin-top: 30px;
-  float: right;
-}
-
-
-
-
-
-
-.rate {
-    float: right;
-    height: 46px;
-    padding: 0 10px;
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
-}
-
-
-
-.comment-box {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    margin-top: 1900px;
-    margin-bottom: 400px;
-}
-
-.comment-box h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.comment-box input{
-width: 100%;
-height: 50px;
-padding: 0 20px;
-margin-bottom: 15px;
-border-radius: 5px;
-border: 1px solid #86b0b6;
-}
-
-.comment-box input:focus{
-    border:1px solid #000;
-    outline: 0;
-}
-
-
-.comment-box textarea{
-    width: 100%;
-    height: 150px;
-    padding: 15px 20px;
-    margin-bottom: 10px;
-    border-bottom: 10px;
-    border-radius:5px;
-    border:1px solid #86b0b6;
-}
-
-
-.comment-box textarea:focus{
-    border:1px solid #000;
-    outline:0;
-}
-
-.comment-box button{
-    border: 0;
-    padding: 10px 30px;
-    background: #86b0b6;
-    font-size: 18px;
-    border-radius: 5px;
-    color: #fff;
-  }
-
- .comment-box button:hover{
-    background-color: #718a8e;
- } 
-
 
